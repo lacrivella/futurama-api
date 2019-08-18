@@ -10,7 +10,6 @@ export default class TopQuotes extends Component {
   componentDidMount() {
     getQuotes()
       .then(quotes => {
-        console.log(quotes);
         this.setState({ quotes });
       });
   }
